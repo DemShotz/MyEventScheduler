@@ -1,0 +1,489 @@
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-size: 2.25vh;
+	-ms-overflow-style: none;
+}
+body {
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+	background-attachment: fixed;
+	font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: #32383d;
+	font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+	font-size: 12px;
+	color:#fff;
+}
+.app {
+	background: url(../images/cordova.png) no-repeat center top;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 50px;
+	width: 225px;
+	text-align: center;
+	padding: 180px 0px 0px 0px;
+	margin: -115px 0px 0px -112px;
+}
+
+.bottom-nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #288feb;
+	color: #fff;
+	height: 3em;
+}
+a#manageJobs:hover, a#calculateHours:hover {
+	background-color: #174a77;
+}
+#potato .madeUp:hover {
+	background: #1e2124;
+	cursor: pointer;
+}
+.login-info {
+	padding: 30px;
+	color: #fff;
+	background: #5d6770;
+	border: 3px solid #aaa;
+	width: 75%;
+	margin: 50px auto;
+}
+.login-info a {
+	color: #fff;
+}
+.login-container {
+	padding: 50px;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.calculation-container {
+	width: 100%;
+	position: absolute;
+	height: 65px;
+	bottom: 65px;
+	background-color: #ccc;
+}
+.calculator h4 {
+	color: #fff!important;
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+.app {
+	background-position: left center;
+	padding: 75px 0px 75px 170px;
+	margin: -90px 0px 0px -198px;
+}
+}
+h1 {
+	vertical-align: middle;
+	margin: 0;
+	font-weight: normal;
+	color: #fff;
+	line-height: 55px;
+	font-size: 3vh;
+}
+#header {
+	text-align: center;
+	background-color: #288feb;
+	width: 100%;
+	z-index: 3;
+	height: 3em;
+}
+#header a {
+	font-size: 20px;
+	position: absolute;
+	display: inline;
+	color: white;
+	text-decoration: none;
+	right: 0;
+	background: #222;
+	padding: 0px 35px;
+	top: 0;
+	height: 55px;
+	line-height: 55px;
+}
+#content {
+	height: 100%;
+}
+#calculate {
+	height: 80%;
+}
+html, body {
+	height: 100%;
+}
+#body {
+	height: 100%;
+	text-align: center;
+}
+table, th, td {
+	font-size: 2vh;
+	border: 1px solid #111;
+	vertical-align: top;
+	text-align: left;
+	table-layout: fixed;
+	padding: 10px;
+	color: #fff;
+}
+table {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+th {
+	height: 20px;
+	background-color: #3FB6FF;
+	color: white;
+	text-align: center !important;
+}
+td {
+	width: 14.2657%;
+	overflow: scroll;
+}
+table td > div {
+	height: 0px;
+}
+
+::-webkit-scrollbar {
+ display: none;
+}
+#menu {
+	display: none;
+	opacity: 0;
+	transition: all 1s cubic-bezier(0, 1, 1, 1) 0s;
+	position: absolute;
+	z-index: 2;
+	height: 60px;
+	width: 100%;
+}
+a#manageJobs {
+	display: inline-block;
+	text-align: center;
+	height: 100%;
+	width: 50%;
+	float: left;
+	font-size: 2.5vh;
+	line-height: 60px;
+	color: white;
+	text-decoration: none;
+	background: #111;
+}
+a#calculateHours {
+	display: inline-block;
+	text-align: center;
+	height: 100%;
+	width: 50%;
+	float: left;
+	font-size: 2.5vh;
+	line-height: 60px;
+	color: white;
+	text-decoration: none;
+	background: #111;
+}
+.job-list {
+	height: 12em;
+	z-index: 5;
+}
+.job-list > h2 {
+	font-size: 3vh;
+	margin: 0.5em 0;
+}
+#addJobdiv {
+	height: 100%;
+	z-index: 6;
+}
+p {
+	font-size: 2.25vh;
+	margin: 5px;
+	color:#fff;
+}
+h2 {
+	text-align: center;
+}
+#startMe, #endMe {
+	width: 50%;
+	float: left;
+	line-height: 60px;
+	margin: 0;
+	padding: 0;
+	color:#222;
+}
+a#addtoList {
+	position: absolute;
+	left: 38%;
+	bottom: 5%;
+	color: black;
+}
+#addedJob {
+	height: 15%;
+	background-color: white;
+}
+#jobP {
+	margin: 0px;
+	text-align: left;
+}
+h3 {
+	border: 3px;
+	margin: 0px 3px;
+	text-align: center;
+}
+a#swipeRight {
+	z-index: 3;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 65px;
+	color: #fff;
+	text-decoration: none;
+	background: #247ac6;
+	font-family: helvita, arial, sans-serif;
+	height: 3em;
+	line-height: 60px;
+	width: 65px;
+	text-align: center;
+}
+a#swipeLeft {
+	z-index: 3;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 65px;
+	color: #fff;
+	text-decoration: none;
+	background: #247ac6;
+	font-family: helvita, arial, sans-serif;
+	height: 3em;
+	line-height: 60px;
+	width: 65px;
+	text-align: center;
+}
+#backup {
+	z-index: 3;
+	position: absolute;
+	bottom: 2%;
+	left: 24%;
+	font-size: 3vh;
+	color: black;
+}
+#addeventDiv {
+	height: 92%;
+	width: 100%;
+	text-align: center;
+}
+.event-info {
+	margin-bottom: 0.5em;
+	padding-left: 3px;
+	border-left: 2px solid red;
+	font-size: 1.75vh;
+}
+.jobsStuff {
+	font-size: 5vw;
+}
+.theHours {
+	display: inline-block;
+	float: right;
+	position: relative;
+	left: -38%;
+}
+.theName {
+	display: inline-block;
+}
+#totalCalc {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+#allHours {
+	display: inline-block;
+	position: relative;
+	float: right;
+	left: -38%;
+}
+#jobContainer {
+	width: 100%;
+}
+/* 161.84 */
+
+.delete-button {
+	display: inline-block;
+	z-index: 1;
+	height: 100%;
+	width: 50%;/*background: url(../images/Delete-Button.png) no-repeat center;
+     background-size: 1em 1em;*/
+}
+.edit-button {
+	display: inline-block;
+	z-index: 1;
+	height: 100%;
+	width: 50%;/*background: url(../images/Edit-Button.png) no-repeat top left;
+     background-size: contain;*/
+}
+.delete-button:hover, .edit-button:hover {
+	cursor: pointer;
+}
+.delete-container {
+	text-align: center;
+	height: 3em;
+}
+.job-header {
+	font-size: 3vh;
+}
+.job-body {
+	font-size: 2.25vh;
+}
+.row {
+	height: 10%;
+}
+.row2 {
+	height: 9%;
+}
+.row3 {
+	text-align: center;
+}
+.row4 {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 2em;
+}
+.row5 {
+	border-top: 1px solid black;
+}
+.row6 {
+	height: 8vw;
+}
+.column1, .column2 {
+	width: calc(50% - 20px);
+	float: left;
+	height: auto;
+}
+.column1 {
+	margin-left: 20px;
+}
+.column2 {
+	margin-right: 20px;
+}
+.column {
+	display: block;
+	width: 100%;
+	height: 10%;
+}
+.jobDetails {
+	font-size: 2vh;
+	width: auto;
+}
+.column1d, .column2d {
+	margin: 0px;
+	width: 50%;
+	float: left;
+	height: auto;
+}
+ul {
+	margin: 0px;
+}
+a {
+	font-size: 2.25vh;
+}
+a:visited {
+	color: white;
+}
+.session {
+	margin: 0;
+	font-size: 2.25vh;
+	z-index: 2;
+	line-height: 60px;
+	text-align: center;
+}
+.session a {
+	color: #fff;
+}
+#jobForm {
+	text-align: center;
+}
+#addjobScript {
+	height: 100%;
+	text-align: center;
+}
+.error {
+	color: #8C0000;
+	text-align: center;
+}
+#login {
+	margin-top: 1em;
+}
+.logincheck {
+	top: 20%;
+}
+.login-form {
+	height: 100%;
+	text-align: center;
+}
+.registration-form {
+	text-align: center;
+}
+#login, #addJob, .register, #eventSet, #deleteEvent, #jobSelect {
+	background-color: #288feb;
+	color: white;
+	padding: 15px 35px;
+	border-radius: 3px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: 0;
+}
+#addJob, .register {
+	margin-top: 0.5em;
+}
+#login:hover, #addJob:hover, #eventSet:hover, #deleteEvent:hover {
+	background-color: #389df7;
+}
+#clickedDate {
+	width: 50vw;
+}
+input[type="text"], input[type="number"], input[type="password"] {
+	text-align: center;
+	border: 1px solid black;
+	width: 100%;
+	font-size: 4vh;
+	margin-bottom: 40px;
+}
+input[type="time"] {
+	border: 1px solid black;
+}
+.loginp {
+	color: #fff;
+}
+.params {
+	margin-top: 0.5em;
+	text-align: center;
+}
+ul {
+	font-size: 1.75vh;
+	list-style-position: inside;
+}
+.coln1, .coln2, .coln3 {
+	height: 100%;
+	text-align: center;
+	width: 33.333333%;
+	float: left;
+}
+h4 {
+	height: 100%;
+	overflow: auto;
+	margin: 0;
+	font-size: 6vw;
+}
+#customText {
+	margin-top: 1em;
+	width: calc(100% - 6px);
+	padding: 2px;
+	height: 100%;
+}
+#customEvent {
+	text-align: center;
+}

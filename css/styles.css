@@ -1,0 +1,680 @@
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-size: 2.25vh;
+	-ms-overflow-style: none;
+}
+body {
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+	background-attachment: fixed;
+	font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: #32383d;
+	font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+	font-size: 12px;
+	color:#fff;
+}
+.app {
+	background: url(../images/cordova.png) no-repeat center top;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 50px;
+	width: 225px;
+	text-align: center;
+	padding: 180px 0px 0px 0px;
+	margin: -115px 0px 0px -112px;
+}
+
+.bottom-nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #0074D9;
+	color: #fff;
+	height: 3em;
+}
+#menu a:hover {
+	background-color: #174a77;
+}
+.madeUp:hover {
+	background: #1e2124;
+	cursor: pointer;
+}
+.login-info {
+	padding: 30px;
+	color: #fff;
+	background: #5d6770;
+	border: 3px solid #aaa;
+	width: 75%;
+	margin: 50px auto;
+}
+.login-info a {
+	color: #fff;
+}
+.login-container {
+	margin: 0 auto;
+}
+input.login {
+	width: 75%!important;
+}
+.calculation-container {
+	width: 100%;
+	position: absolute;
+	height: 2.75em;
+	bottom: 3em;
+	background-color: #ccc;
+	line-height: 2.5em;
+}
+#startMe, #endMe {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color:#222;
+}
+.calculator h4 {
+	color: #fff!important;
+}
+h1 {
+	vertical-align: middle;
+	margin: 0;
+	font-weight: normal;
+	color: #fff;
+	height: 100%;
+	font-size: 3.5vh;
+	line-height: 1.8em;
+        text-shadow: 1px 2px 2px black;
+}
+#header {
+	text-align: center;
+	background-color: #0074D9;
+	width: 100%;
+	z-index: 3;
+	height: 7%;
+        -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+#dropdownList, #returnCurrent, #header a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	font-size: 3vh;
+	height: 7%;
+	width: 4em;
+	line-height: 2em;
+	color: white;
+	text-decoration: none;
+	background: #0065bd;
+	overflow: hidden;
+}
+#returnCurrent {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#content {
+	height: calc(93% - 3em);
+}
+#calculate {
+	height: 80%;
+}
+html, body {
+	height: 100%;
+}
+#body {
+	height: 100%;
+	text-align: center;
+}
+table, th, td {
+	font-size: 2vh;
+	border: 1px solid #111;
+	vertical-align: top;
+	text-align: left;
+	table-layout: fixed;
+	color: #fff;
+}
+table {
+	width: 100%;
+	height: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+th {
+	height: 20px;
+	background-color: #1894ff;
+	color: white;
+	text-align: center !important;
+	vertical-align: middle;
+}
+td {
+	width: 14.2657%;
+	overflow: scroll;
+	padding: 5px;
+}
+table td > div {
+	height: 0px;
+}
+
+::-webkit-scrollbar {
+ display: none;
+}
+#menu {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	height: 6em;
+	width: 100%;
+}
+.job-list {
+	height: 11em;
+	z-index: 5;
+}
+.job-list > h2 {
+	font-size: 3vh;
+	margin: 0.5em 0;
+}
+#addJobdiv {
+	height: 100%;
+	z-index: 6;
+}
+p {
+	font-size: 2.25vh;
+	margin: 5px;
+	color:#fff;
+}
+h2 {
+	text-align: center;
+}
+a#addtoList {
+	position: absolute;
+	left: 38%;
+	bottom: 5%;
+	color: black;
+}
+#addedJob {
+	height: 15%;
+	background-color: white;
+}
+#jobP {
+	margin: 0px;
+	text-align: left;
+}
+h3 {
+	border: 3px;
+	margin: 0px 3px;
+	text-align: center;
+}
+a#swipeRight, a#swipeLeft {
+	z-index: 3;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	text-decoration: none;
+	background: #0065bd;
+	font-family: helvita, arial, sans-serif;
+	text-align: center;
+	line-height: 0.7em;
+	font-size: 8vh;
+	height: 100%;
+	width: 1em;
+	overflow: hidden;
+}
+a#swipeRight {
+	right: 0;
+}
+a#swipeLeft {
+	left: 0;
+}
+#backup {
+	z-index: 3;
+	position: absolute;
+	bottom: 2%;
+	left: 24%;
+	font-size: 3vh;
+	color: black;
+}
+#addeventDiv {
+	height: 85%;
+	width: 100%;
+	text-align: center;
+}
+.event-info {
+	margin-bottom: 0.5em;
+	padding-left: 3px;
+	border-left: 2px solid red;
+	font-size: 1.75vh;
+}
+.jobsStuff {
+	font-size: 5vw;
+}
+.theHours {
+	display: inline-block;
+	float: right;
+	position: relative;
+	left: -38%;
+}
+.theName {
+	display: inline-block;
+}
+#totalCalc {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+#allHours {
+	display: inline-block;
+	position: relative;
+	float: right;
+	left: -38%;
+}
+#jobContainer {
+	width: 100%;
+}
+/* 161.84 */
+
+.delete-button {
+	color: red;
+	margin-right: 20%;
+	text-decoration: underline;
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+.edit-button {
+	color: yellow;
+	margin-left: 20%;
+	text-decoration: underline;
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+.delete-button:hover, .edit-button:hover {
+	cursor: pointer;
+}
+.delete-container {
+	margin-top: 1em;
+	text-align: center;
+	height: 2em;
+}
+.job-header {
+	font-size: 3vh;
+}
+.job-body {
+	font-size: 2.25vh;
+}
+.row {
+	height: 10%;
+}
+@media only screen and (max-device-width: 480px) {
+	.row {
+		height: 12%;
+	}
+}
+.row2 {
+	height: auto;
+}
+.row3 {
+	text-align: center;
+}
+.row4 {
+	display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.row5 {
+	border-top: 1px solid black;
+}
+.row6 {
+	height: 9vw;
+}
+.row7 {
+	height: 28px;
+}
+.row8 {
+	height: 8%;
+}
+@media only screen and (max-device-width: 480px) {
+	* {
+		font-size: 3vh;
+	}
+	.row8 {
+		height: 35%;
+                align-content: center;
+	}
+	.orThis {
+		font-size: 3vh;
+	}
+        #login, #addJob, .register, #eventSet, #deleteEvent, #jobSelect, .editJob {
+            display: block;
+            margin-top: 10px!important;
+            margin: auto;
+        }
+        .row9 {
+            position: fixed;
+            bottom: 50px;
+            width: 100%;
+        }
+}
+.column1, .column2 {
+	width: calc(50% - 20px);
+	float: left;
+	height: auto;
+}
+.column1 {
+	margin-left: 20px;
+}
+.column2 {
+	margin-right: 20px;
+}
+.column {
+	display: block;
+	width: 100%;
+	height: 10%;
+}
+.jobDetails {
+	font-size: 2vh;
+	width: auto;
+}
+.column1d, .column2d {
+	margin: 0px;
+	width: 50%;
+	float: left;
+	height: auto;
+}
+ul {
+	margin: 0px;
+}
+a {
+	font-size: 2.25vh;
+}
+.session {
+	margin: 0;
+	font-size: 2.25vh;
+	z-index: 2;
+	padding: 0.85em 0;
+	text-align: center;
+}
+@media only screen and (max-device-width: 480px) {
+	.session {
+		padding: 1.3em;
+	}
+	a#swipeRight, a#swipeLeft {
+		line-height: 0.95em;
+	}
+        input[type="time"] {
+                width: 110px;
+        }
+}
+.session a {
+	color: #fff;
+}
+#jobForm {
+	text-align: center;
+}
+#addjobScript {
+	height: 100%;
+	text-align: center;
+}
+.error {
+	color: #8C0000;
+	text-align: center;
+}
+#login {
+	margin-top: 1em;
+}
+.logincheck {
+	top: 20%;
+}
+.login-form {
+	height: 100%;
+	text-align: center;
+}
+.registration-form {
+	text-align: center;
+}
+#login, #addJob, .register, #eventSet, #deleteEvent, #jobSelect, .editJob {
+	background-color: #0074D9;
+	color: white;
+	padding: 10px 30px;
+	border-radius: 3px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border: 0;
+	margin-top: 20px;
+	text-decoration: none;
+	font-size: 20px;
+}
+#addJob, .register {
+	position: fixed;
+        top: 85%;
+        -webkit-backface-visibility: hidden;
+}
+#login:hover, #addJob:hover, #eventSet:hover, #deleteEvent:hover {
+	background-color: #389df7;
+}
+#clickedDate {
+	width: 40%;
+}
+input[type="text"], input[type="number"], input[type="password"] {
+	text-align: center;
+	border: 1px solid black;
+	width: 75%;
+	font-size: 3vh;
+	margin-bottom: 30px;
+        padding: 5px;
+}
+input[type="time"] {
+	border: 1px solid black;
+}
+.loginp {
+	color: #fff;
+}
+.params {
+	margin-top: 0.5em;
+	text-align: center;
+}
+ul {
+	font-size: 1.75vh;
+	list-style-position: inside;
+}
+.coln1, .coln2, .coln3 {
+	height: 100%;
+	text-align: center;
+	width: 33.333333%;
+	float: left;
+}
+h4 {
+	height: 100%;
+	overflow: auto;
+	margin: 0;
+	font-size: 6vw;
+}
+#customText {
+	margin-top: 1em;
+	width: calc(100% - 6px);
+	padding: 2px;
+	height: 100%;
+}
+#customEvent {
+	text-align: center;
+}
+.orThis {
+	color: white;
+}
+.orThis a {
+	color: white;
+}
+@keyframes pop {
+  0% {
+    font-size: 0px
+  }
+  100% {
+	font-size: 20px;
+  }
+}
+.option-input {
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	-ms-appearance: none;
+  	-o-appearance: none;
+  	appearance: none;
+  	/*position: relative;*/
+  	top: 7px;
+  	bottom: 0;
+	right: 0;
+	left: 0;
+  	height: 28px;
+  	width: 28px;
+  	background: #3366ff;
+  	border: none;
+  	color: #fff;
+  	cursor: pointer;
+  	display: inline-block;
+  	margin: 0;
+  	outline: none;
+  	/*position: relative;*/
+  	z-index: 1000;
+}
+.option-input:hover {
+  	background: #3366ff;
+}
+.option-input:checked {
+  	background: #3366ff;
+}
+.option-input:checked::before {
+        font-family: "Font Awesome 5 Free";
+  	height: 28px;
+  	width: 28px;
+  	position: absolute;
+  	content: '\f00c';
+        font-style: normal;
+        text-decoration: inherit;
+        font-weight: normal;
+  	display: inline-block;
+  	font-size: 20px;
+  	text-align: center;
+  	line-height: 30px;
+}
+.option-input.radio {
+  	border-radius: 0 50% 50% 0;
+}
+.option-input.radio::after {
+  	border-radius: 0 50% 50% 0;
+}
+label {
+	display: inline-block;
+	background: #0074D9;
+	height: 28px;
+	width: 150px;
+	vertical-align: top;
+	border-radius: 28px 0 0 28px;
+	font-size: 19px;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+	#header {
+		height: 9%;
+                .header.shadow {
+                -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+                -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+                box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        }
+	}
+	#content {
+		height: calc(91% - 3em);
+	}
+	#header h1 {
+		line-height: 2.5em;
+	}
+	#header a {
+		height: 9%;
+		line-height: 2.7em;
+	}
+	.row {
+		margin-top: 10px;
+	}
+	#clickedDate {
+		width: 70%;
+	}
+	input[type="button"], input[type="submit"], select {
+		background-color: gray!important;
+		color: black!important;
+	}
+	th {
+
+	}
+}
+input[type="color"] {
+	cursor: pointer;
+	padding: 1px;
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+a#manageJobs, a#calculateHours, a#fixPref, a#contactAdmin, a#androidSettings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: calc(50% - 2px);
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: #404040;
+}
+a#manageJobs, a#fixPref {
+    border-width: 0 2px 0 0;
+}
+a#calculateHours, a#contactAdmin {
+    border-width: 0 0 0 2px;
+}
+a#androidSettings {
+    width: 100%;
+    border-width: 3px 0 0 0;
+}
+#manageRow1 {
+    width: calc(100% - 6px);
+    height: 75px;
+    background: #111;
+    border-style: solid;
+    border-color: #404040;
+    cursor: pointer;
+}
+#manageRow2 {
+    width: calc(100% - 6px);
+    height: 75px;
+    background: #111;
+    border-style: solid;
+    border-color: #404040;
+    cursor: pointer;
+    border-width: 0 3px 3px 3px;
+}
+#manageRow3 {
+    width: calc(100% - 6px);
+    height: 75px;
+    background: #111;
+    border-style: solid;
+    border-color: #404040;
+    cursor: pointer;
+    border-width: 0 3px 3px 3px;
+}
