@@ -8,7 +8,7 @@ include_once "sql-testing/contactAdmin.inc.php";
 <html>
 <head>
      <?php include 'header.php' ?>
-     <title>Contact Website Creator</title>
+     <title>Contact Admin</title>
 </head>
 <body>
 
@@ -25,7 +25,7 @@ include_once "sql-testing/contactAdmin.inc.php";
      <div class="row">
           <textarea id="customText" name="commentBox" type="paragraph" autocomplete="off">Type here!</textarea>
      </div>
-     <div class="row">
+     <div class="row4">
           <input type="submit" value="Send Message" class="register" />
      </div>
 </form>
